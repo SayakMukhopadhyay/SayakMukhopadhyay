@@ -8,20 +8,6 @@ on:
       - main
 
 jobs:
-  achievements:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: achievements.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: achievements
-          plugin_achievements: yes
-          plugin_achievements_threshold: B      # Display achievements with rank B or higher
-          plugin_achievements_secrets: yes      # Display unlocked secrets achievements
-          plugin_achievements_display: compact  # Use compact display
-          plugin_achievements_limit: 0          # Display all unlocked achievements (no limit)
-
   github-metrics:
     runs-on: ubuntu-latest
     steps:
@@ -32,15 +18,17 @@ jobs:
           template: classic
           base: header
           config_timezone: Asia/Kolkata
-  lines:
+  
+  repositories:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: lines-of-code.svg
+          filename: repositories.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: "repositories"
-          plugin_lines: yes
+          template: classic
+          base: repositories
+          config_timezone: Asia/Kolkata
 
   acti_comm:
     runs-on: ubuntu-latest
@@ -64,23 +52,7 @@ jobs:
           base: ""
           config_timezone: Asia/Kolkata
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
-
-  habits:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: github-habits.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          config_timezone: Asia/Kolkata
-          base: ""
-          template: classic
-          plugin_habits: yes
-          plugin_habits_from: 200       # Use 200 events to compute habits
-          plugin_habits_days: 14        # Keep only events from last 14 days
-          plugin_habits_charts: yes     # Display charts section
-          plugin_habits_trim: yes       # Trim unused hours on daily chart
+          plugin_isocalendar_duration: full-year
 
   issue_pr_lang:
     runs-on: ubuntu-latest
@@ -94,15 +66,40 @@ jobs:
           config_timezone: Asia/Kolkata
           plugin_followup: yes
           plugin_languages: yes
-
-
-  repositories:
+  
+  lines:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: repositories.svg
+          filename: lines-of-code.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          template: classic
-          base: repositories
+          base: ""
           config_timezone: Asia/Kolkata
+          plugin_lines: yes
+
+  habits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-habits.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          config_timezone: Asia/Kolkata
+          template: classic
+          plugin_habits: yes
+          plugin_habits_charts: yes
+          plugin_habits_trim: yes
+  
+  achievements:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          config_timezone: Asia/Kolkata
+          plugin_achievements: yes
+          plugin_achievements_display: compact
