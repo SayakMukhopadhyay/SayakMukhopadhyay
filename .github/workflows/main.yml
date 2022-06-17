@@ -103,3 +103,15 @@ jobs:
           config_timezone: Asia/Kolkata
           plugin_achievements: yes
           plugin_achievements_display: compact
+  
+  contributions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: contributions.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          config_timezone: Asia/Kolkata
+          plugin_notable: yes
+          plugin_notable_from: all
