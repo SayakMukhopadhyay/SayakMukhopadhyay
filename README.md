@@ -31,3 +31,7 @@
 <a href="https://github.com/SayakMukhopadhyay">
     <img align="center" width="49%" src="./achievements.svg" />
 </a>
+
+<a href="https://github.com/SayakMukhopadhyay">
+    <img align="center" width="49%" src="./contributions.svg" />
+</a>
