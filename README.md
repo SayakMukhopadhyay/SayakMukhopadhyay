@@ -21,6 +21,10 @@
 </a>
 
 <a href="https://github.com/SayakMukhopadhyay">
+    <img align="center" width="49%" src="./lines-of-code.svg" />
+</a>
+
+<a href="https://github.com/SayakMukhopadhyay">
   <img align="center" width="49%" src="./github-habits.svg" />
 </a>
 
