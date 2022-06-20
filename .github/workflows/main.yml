@@ -74,7 +74,7 @@ jobs:
         with:
           filename: lines-of-code.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+          base: repositories
           config_timezone: Asia/Kolkata
           plugin_lines: yes
 
