@@ -700,6 +700,49 @@
                                 <div class="text">Use GitHub Actions to automate profile updates</div>
                             </div>
                         </div>
+                        
+                        
+                     
+           <!--Adding Technical interviewer achievements in achievements section -->
+                     
+                       <div class="achievement secret largeable-width-half">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" height="44" width="44">
+                                    <defs>
+                                        <mask id="mask">
+                                            <circle class="gauge-base" r="25" cx="28" cy="28" fill="white"/>
+                                        </mask>
+                                    </defs>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
+                                        <circle class="gauge-base" r="25" cx="28" cy="28"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="155 155"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
+                                     <g transform="translate(4 4)" fill="none" fill-rule="evenodd">
+                                            
+                                            <path d="M42 36a6 6 0 110 12 6 6 0 010-12z" stroke="#FF48BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path stroke="#FF48BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M44.338 40.663l-3.336 3.331-1.692-1.686M31 31c-.716-2.865-3.578-5-7-5-3.423 0-6.287 2.14-7 5"/>
+                                            <path d="M24 16a5 5 0 110 10 5 5 0 010-10z" stroke="#FF48BD" stroke-width="2" stroke-linecap="round"/>
+                                            <circle stroke="#FF48BD" stroke-width="2" cx="24" cy="24" r="14"/>
+                                        </g>     
+                                    </svg>
+                                </svg>
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    <span class="prefix"></span>
+                                    Interviewer
+                                    <div class="value-wrapper">
+                                        <div class="value">☆</div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="text">Use GitHub Actions to automate profile updates</div>
+                            </div>  
+                        </div>
+   
+                        
+                        
                     </section>
                 </div>
             </section>
