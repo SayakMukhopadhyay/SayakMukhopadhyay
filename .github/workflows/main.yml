@@ -11,7 +11,7 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: SayakMukhopadhyay/profile-metrics@main
         with:
           filename: header.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -22,7 +22,7 @@ jobs:
   repositories:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: SayakMukhopadhyay/profile-metrics@main
         with:
           filename: repositories.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -33,7 +33,7 @@ jobs:
   acti_comm:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: SayakMukhopadhyay/profile-metrics@main
         with:
           filename: acti_comm.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -44,7 +44,7 @@ jobs:
   iso_calender:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: SayakMukhopadhyay/profile-metrics@main
         with:
           filename: iso_calender.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -57,7 +57,7 @@ jobs:
   issue_pr_lang:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: SayakMukhopadhyay/profile-metrics@main
         with:
           filename: issue_pr_lang.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -70,7 +70,7 @@ jobs:
   lines:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: SayakMukhopadhyay/profile-metrics@main
         with:
           filename: lines-of-code.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -81,7 +81,7 @@ jobs:
   habits:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: SayakMukhopadhyay/profile-metrics@main
         with:
           filename: github-habits.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -95,7 +95,7 @@ jobs:
   achievements:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: SayakMukhopadhyay/profile-metrics@main
         with:
           filename: achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -107,7 +107,7 @@ jobs:
   contributions:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: SayakMukhopadhyay/profile-metrics@main
         with:
           filename: contributions.svg
           token: ${{ secrets.METRICS_TOKEN }}
